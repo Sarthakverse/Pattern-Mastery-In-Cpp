@@ -1,0 +1,42 @@
+/*  *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *   */
+
+#include<iostream>
+using namespace std;
+int main()
+{
+   for(int i=1;i<=10;i++)
+   {
+      if(i<=5){
+      for (int j = 1; j<=9; j++)
+      {
+        if(j>=6-i&&j<=4+i)
+        cout<<"*";
+        else
+        cout<<" ";
+      }
+      cout<<endl;
+      }
+      else
+      {
+         for (int j = 1; j<=9; j++)
+      {
+        if(j>i-6&&j<=15-i)
+        cout<<"*";
+        else
+        cout<<" ";
+      }
+      cout<<endl;
+      }
+      
+   }
+   return 0;
+}
